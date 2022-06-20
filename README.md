@@ -7,8 +7,8 @@
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Screenshot](#screenshot)
 - [License](#license)
-
 - [Questions](#questions)
 
 ## [Description](#table-of-contents)
@@ -22,6 +22,10 @@ This project takes provided starter code for a database enabled budget tracker a
 ## [Usage](#table-of-contents)
 
 The application is deployed at https://secure-hollows-22505.herokuapp.com/
+
+## [Screenshot](#table-of-contents)
+
+![screenshot](./images/screenshot.png)
 
 ## [License](#table-of-contents)
 
