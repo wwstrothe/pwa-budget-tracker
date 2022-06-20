@@ -13,15 +13,15 @@
 
 ## [Description](#table-of-contents)
 
-Using Progressive Web Application (PWA) this application enables the user to add expenses and deposits to their budget with or without an online c
+This project takes provided starter code for a database enabled budget tracker and converts it into a functional Progressive Web Application (PWA) with offline access and functionality. The browser Cache API is used to store the application's HTML, CSS, and JavaScript, controlled by a service worker. Offline transactions are stored using Indexed DB and are automatically uploaded when a connection is restored. A manifest file is also provided to allow the application to be downloaded to a browser, tablet, or phone.
 
 ## [Installation](#table-of-contents)
 
-npm i
+- npm install
 
 ## [Usage](#table-of-contents)
 
-npm start
+The application is deployed at https://secure-hollows-22505.herokuapp.com/
 
 ## [License](#table-of-contents)
 
