@@ -1,3 +1,6 @@
+const APP_PREFIX = 'Budget-';
+const VERSION = 'version_01';
+const CACHE_NAME = APP_PREFIX + VERSION;
 const FILES_TO_CACHE = [
   "./index.html",
   "./css/styles.css",
@@ -12,10 +15,6 @@ const FILES_TO_CACHE = [
   "./icons/icon-384x384.png",
   "./icons/icon-512x512.png"
 ]
-
-const APP_PREFIX = 'Budget-';
-const VERSION = 'version_01';
-const CACHE_NAME = APP_PREFIX + VERSION;
 
 // Respond with cached resources
 self.addEventListener('fetch', function (e) {
@@ -36,7 +35,7 @@ self.addEventListener('fetch', function (e) {
   )
 })
 
-// Install the service worker
+// Cache resources
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
@@ -46,7 +45,7 @@ self.addEventListener('install', function (e) {
   )
 })
 
-// Activate the service worker and remove old data from the cache
+// Delete outdated caches
 self.addEventListener('activate', function (e) {
   e.waitUntil(
     caches.keys().then(function(keyList) {
